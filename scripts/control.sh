@@ -1,0 +1,1 @@
+DEEPSEEK_CMD="$HOME/deepseek_command"; while true; do if [ -s $DEEPSEEK_CMD ]; then echo "🔄 EXÉCUTION..."; CMD=$(cat $DEEPSEEK_CMD); eval "$CMD" 2>&1; echo "✅ PRÊT"; > $DEEPSEEK_CMD; fi; sleep 2; done
